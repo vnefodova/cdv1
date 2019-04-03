@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>formularz</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+    <input type="login" name="login" placeholder="login"autofocus autocomplete="off"required><br><br>
+    <input type="password" name="pass" placeholder="haslo"required><br><br>
+    <input type="number" name="liczba1" step="10" >
+    <input type="number" name="liczba2" step="0.1" >
+    daty: <br><br>
+    <input type="date" name="date1"><br><br>
+    <input type="time" name="date2" ><br><br>
+    <input type="datetime-local" name="date3" ><br><br>
+      <input type="week" name="date4" ><br><br>
+    <input type="month" name="date5" ><br><br>
+    Telefon:<br><br>
+    <input type="tel" name="telefon" ><br><br>
+    Kolor:
+    <input type="color" name="kolor" >
+    Zakres:
+    <input type="range" name="zakres" min="0" max="255"><br><br>
+    Lista:<br><br>
+  <label>Dziem tygodnia</label>
+  <input type="text" name="dziem" list="tydzien">
+  <datalist id = "tydzien">
+    <option value="Poniedzialek">
+</datalist>
+
+  Wyrazenia regularne:<br><br>
+  Pesel:<br><br>
+  <input type="text" name="pesel" pattern="[0-9]{11}"required><br><br>
+  Kod pocztowy:<br><br>
+  <input type="text" name="kod" pattern="\d{2}-\d{3}"placeholder= "00-000" required><br><br>
+
+Adres ip:<br><br>
+<input type="text" name="adres-ip" pattern="\d{3}.\d{3}.\d{3}.\d{1}" placeholder="000.000.000.0"required><br><br>
+<!-- 192.168.100.1 -->
+
+Adres MAC:<br><br>
+<!-- 11AADD1234aa 11:AA:DD:12:34:aa -->
+<input type="text" name="adres-mac" pattern="\d{2}:[A-Z]{2}:[A-Z]{2}:\d{2}:\d{2}:[a-z]{2}" placeholder="00:AA:AA:00:00:aa" required><br><br>
+    <input type="submit" name="przycisk" value="wyslij">
+    </form>
+  </body>
+</html>

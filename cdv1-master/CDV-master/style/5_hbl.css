@@ -1,0 +1,27 @@
+body {
+  background-color: blue;
+}
+
+table , tr , td , th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+td {
+  background-color: yellow;
+  color:red ;
+}
+.col{
+  background-color: green ;
+  color: #FFF;
+}
+#tabela1 td {
+  color: black;
+}
+.polonszone{
+  background-color: #FFF;
+}
+#polonszone1{
+  background-color: yellow;
+}
